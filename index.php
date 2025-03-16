@@ -1,3 +1,12 @@
+<?php
+require_once './config/conn.php';
+require_once './class/carros.class.php';
+// Instanciar a classe Carros
+$carro = new Carros($conn);
+// Obter os carros do banco de dados
+$carros = $carro->listarCarros();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -74,19 +83,188 @@
           <hr>
           <div class="deals__card__footer">
             <h3>R$180<span>/Por dia</span></h3>
-            <a href="./src/php/alugar_carro.php">
-              Alugar já <span><i class="ri-arrow-right-line"></i></span>
-            </a>
+            <button  class="openModalBtn button-a animated-button"> Alugar já<span><i class="ri-arrow-right-line"></i></span></button>
           </div>
         </div>
         <!-- Repetir estrutura para mais carros -->
+
+        <div class="deals__card">
+          <img src="./assets/deals-1.png" alt="deals">
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Tesla Model S</h4>
+          <div class="deals__card__grid">
+            <div><span><i class="ri-group-line"></i></span> 4 Pessoas</div>
+            <div><span><i class="ri-steering-2-line"></i></span> Automático</div>
+            <div><span><i class="ri-speed-up-line"></i></span> 400km</div>
+            <div><span><i class="ri-car-line"></i></span> Elétrico</div>
+          </div>
+          <hr>
+          <div class="deals__card__footer">
+            <h3>R$180<span>/Por dia</span></h3>
+            <button  class="openModalBtn button-a animated-button"> Alugar já<span><i class="ri-arrow-right-line"></i></span></button>
+          </div>
+        </div>
+
+        <!-- Terceiro -->
+
+        <div class="deals__card">
+          <img src="./assets/deals-1.png" alt="deals">
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Tesla Model S</h4>
+          <div class="deals__card__grid">
+            <div><span><i class="ri-group-line"></i></span> 4 Pessoas</div>
+            <div><span><i class="ri-steering-2-line"></i></span> Automático</div>
+            <div><span><i class="ri-speed-up-line"></i></span> 400km</div>
+            <div><span><i class="ri-car-line"></i></span> Elétrico</div>
+          </div>
+          <hr>
+          <div class="deals__card__footer">
+            <h3>R$180<span>/Por dia</span></h3>
+            <button  class="openModalBtn button-a animated-button"> Alugar já<span><i class="ri-arrow-right-line"></i></span></button>
+          </div>
+        </div>
+
+        <div class="deals__card">
+          <img src="./assets/deals-1.png" alt="deals">
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Tesla Model S</h4>
+          <div class="deals__card__grid">
+            <div><span><i class="ri-group-line"></i></span> 4 Pessoas</div>
+            <div><span><i class="ri-steering-2-line"></i></span> Automático</div>
+            <div><span><i class="ri-speed-up-line"></i></span> 400km</div>
+            <div><span><i class="ri-car-line"></i></span> Elétrico</div>
+          </div>
+          <hr>
+          <div class="deals__card__footer">
+            <h3>R$180<span>/Por dia</span></h3>
+            <button  class="openModalBtn button-a animated-button"> Alugar já<span><i class="ri-arrow-right-line"></i></span></button>
+          </div>
+        </div>
+
+        <div class="deals__card">
+          <img src="./assets/deals-1.png" alt="deals">
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Tesla Model S</h4>
+          <div class="deals__card__grid">
+            <div><span><i class="ri-group-line"></i></span> 4 Pessoas</div>
+            <div><span><i class="ri-steering-2-line"></i></span> Automático</div>
+            <div><span><i class="ri-speed-up-line"></i></span> 400km</div>
+            <div><span><i class="ri-car-line"></i></span> Elétrico</div>
+          </div>
+          <hr>
+          <div class="deals__card__footer">
+            <h3>R$180<span>/Por dia</span></h3>
+            <button  class="openModalBtn button-a animated-button"> Alugar já<span><i class="ri-arrow-right-line"></i></span></button>
+          </div>
+        </div>
+
+        <div class="deals__card">
+          <img src="./assets/deals-1.png" alt="deals">
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Tesla Model S</h4>
+          <div class="deals__card__grid">
+            <div><span><i class="ri-group-line"></i></span> 4 Pessoas</div>
+            <div><span><i class="ri-steering-2-line"></i></span> Automático</div>
+            <div><span><i class="ri-speed-up-line"></i></span> 400km</div>
+            <div><span><i class="ri-car-line"></i></span> Elétrico</div>
+          </div>
+          <hr>
+          <div class="deals__card__footer">
+            <h3>R$180<span>/Por dia</span></h3>
+            <button  class="openModalBtn button-a animated-button"> Alugar já<span><i class="ri-arrow-right-line"></i></span></button>
+          </div>
+        </div>
+
+
+
+        
+         
       </div>
+
+      
+
+
+      
     </div>
   </section>
 
+
+
+  
+<!-- modal -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <h2>Formulário de Aluguel</h2>
+      <form method="POST" action="aluguel.php">
+        De: 
+        <input type="date" name="data_ini" required>
+        As: 
+        <input type="time" name="hr_ini" required>
+        <br><br>
+        Até: 
+        <input type="date" name="data_fim" required>
+        As: 
+        <input type="time" name="hr_fim" required>
+        <br><br>
+
+        <label for="carro">Escolha um carro:</label>
+        <select name="carro" id="carro">
+            <?php foreach ($carros as $carro): ?>
+                <option value="<?= $carro['id_carro']; ?>">
+                <?= htmlspecialchars($carro['marca']) ." ". htmlspecialchars($carro['modelo']) ; ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Alugar">
+    </form>
+      <button class="close-btn" id="closeModalBtn">Fechar</button>
+    </div>
+  </div>
+
+
+
+
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./src/js/main.js"></script>
+  <script src="./src/js/main.js"></script> <!-- troca carros-->
+  <script src="./src/js/modaljs.js"></script> <!-- modal carros-->
 </body>
 
 </html>
